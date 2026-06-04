@@ -28,6 +28,12 @@ for _, code in ipairs({
         CodeRemote:InvokeServer(code)
     end)
 end
+task.wait(0.5)
+
+local Event = game:GetService("ReplicatedStorage").Packages._Index["sleitnick_knit@1.7.0"].knit.Services.DataService.RF.SetSelectionBannerMythic
+Event:InvokeServer(
+    "Spade"
+)
 
 task.wait(0.5)
 
